@@ -41,7 +41,6 @@ async def send_message_with_retry(context, chat_id, message, retries=3, delay=2,
 
 
 # Async function to send latest posts in an infinite loop
-# Async function to send latest posts in an infinite loop
 async def send_latest_posts_infinite(chat_id: int, context: ContextTypes.DEFAULT_TYPE, user_profile_url: str, username: str) -> None:
     global last_sent_posts
     while True:
